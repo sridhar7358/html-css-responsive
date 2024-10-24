@@ -51,6 +51,7 @@ body{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: fit-content;
 }
 .headline h1{
     font-size:36px;
@@ -61,11 +62,16 @@ body{
 }
 .headline hr{
 
-    width: 343.39px;
+    width: auto;
     height: 2px;
     background-color: black;
+    margin: auto;
    
     
+}
+.headcontainer{
+    width: 100%;
+    align-items: center;
 }
 .container1{
     padding-top: 50px;
@@ -88,6 +94,7 @@ body{
     gap: 0px;
     border-radius: 4px ;
     opacity: 0px;
+    object-fit: cover;
     
 }
 .card p{
@@ -110,12 +117,13 @@ body{
 }
 .img-box1 img{
     width: 550px;
-    height: 850px;
+    height: 550px;
     gap: 0px;
     border-radius: 4px;
     opacity: 0px;
     justify-content: center;
     text-align: center;
+    /* object-fit: cover; */
     
 }
 .headline h2{
@@ -166,6 +174,7 @@ body{
     height: 376px;
     border-radius: 4px;
     margin-left: 20px;
+    object-fit: cover;
 }
 .txt{
     width: 60%;
@@ -250,4 +259,24 @@ ul{
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+.solid1{
+    width: fit-content;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+.solid2{
+    width: fit-content;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+}
+hr
+{
+    width: auto;
+    height: 2px;
+    background-color: black;
+    background-color: black;
+    
 }
