@@ -17,7 +17,10 @@ body{
 .logo{
     width: 80px;
    height: 64px;
-   padding-left: 24px;
+   display: flex;
+   gap: 24px;
+   /* padding-left: 24px; */
+   
 }
 .logo img{
     width: 80px;
@@ -26,11 +29,16 @@ body{
     border-radius: 4px;
     opacity: 0px;
 }
-.menu{
+.menu ul{
     width: 404px;
     /* height: 42px; */
     display: flex;
     gap: 20px;
+    padding-top: 0px;
+}
+#menu-icon{
+    display: none;
+    
 } 
 .icon{
     display: flex;
@@ -47,7 +55,11 @@ body{
     border-radius: 4px;    
     object-fit: cover;
 }
+#banner5{
+    display: none;
+}
 .headline {
+   
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -63,7 +75,7 @@ body{
 .headline hr{
 
     width: auto;
-    height: 2px;
+    height: 1px;
     background-color: black;
     margin: auto;
    
@@ -72,6 +84,8 @@ body{
 .headcontainer{
     width: 100%;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .container1{
     padding-top: 50px;
@@ -81,12 +95,13 @@ body{
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
+   
 }
 .card{
     width:  275px;
     height: 425px;
     border-radius: 8px;
- 
 }
 .card img{
     width: 275px;
@@ -111,6 +126,7 @@ body{
 }
 .img-box1{
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     padding: 0px 110px 16px 110px;
 
@@ -145,6 +161,7 @@ body{
 }
 .slider-cont{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
@@ -163,6 +180,8 @@ body{
 .container4{
     
     display: flex;
+    margin-bottom: 10px;
+   
 }
 .img-box{
     width:416px;
@@ -197,6 +216,7 @@ body{
     border-width: 2px;
     border-color: black;
     border-style: solid;
+    margin: auto;
 
 }
 .footer{
@@ -275,8 +295,148 @@ ul{
 hr
 {
     width: auto;
-    height: 2px;
-    background-color: black;
+    height: 1px;
     background-color: black;
     
+}
+
+/* tab viwe */
+@media screen and (max-width:768px) {
+   
+     .menu{
+        display: none;
+     }
+     #menu-icon{
+       display: block;
+       width: 16px;
+       height: 24px;
+       font-size: 20px;
+       padding-top: 20px;
+       padding-left: 20px;
+     }
+    .banner img {
+        width: 768px;
+        height: 334px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+    .card{
+        padding-top: 30px;
+    }
+    .txt1{
+        background-color: rgba(252, 211, 77, 1);
+        width: 529px;
+        height: 80px;
+        align-content: center;
+    }
+    .img-box {
+        width: 131px;
+        height: 131px;
+    }
+    .img-box img {
+        width: 131px;
+        height: 131px;
+        border-radius: 4px;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+    .txt{
+        width: 78%;
+        align-items: center; 
+        padding-top: 10px;  
+    }
+    .container4{
+        display: flex;
+        justify-content: space-between;
+    }
+    .txt1 {
+        width: 529.56px;
+        height: 78px;
+    }
+    .txt p{
+        width: 539.74px;
+        height: 112px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .img-box1 img{
+        width: 284px;
+        height: 438px;
+    }
+    .img-box1 {
+        display: flex;
+        justify-content: center;
+    }
+
+ 
+}
+/* mobile viwe */
+@media screen and (max-width:375px){
+ *{
+        margin: 0px;
+        padding: 0px;
+ }
+.banner img{
+        display: none;
+}
+#banner5{
+    display: block;
+    width: 360px;
+    height: 540px;
+}
+.img-box1{
+    width: 360px;
+    height: 312px;
+    padding: 0px;
+}
+.img-box1 img{
+    width: 148px;
+    height: 228px;
+}
+.container4{
+    flex-direction: column;
+   gap: 50px;
+}
+.img-box{
+    width: 320px;
+    height: 320px;
+}
+.img-box img{
+    width: 320px;
+    height: 320px;
+    border-radius: 16px;
+}
+.txt{
+    padding-left: 20px;
+}
+.txt p{
+width: 307px;
+height: 120px;
+font-weight: 700;
+font-size: small;
+}
+.foot-cont{
+    flex-direction: column;
+    gap: 10px;
+}
+.foot-rgt{
+    flex-direction: column;
+    gap: 10px;
+}
+.footer{
+    padding-left: 20px;
+}
+.foot-bottem{
+    flex-direction: column;
+    width: 328px;
+    height: 77px;
+}
+.foot-botte p{
+    width: 279px;
+    height: 20px;
+    font-size: 14px;
+}
+.foot-icon{
+    margin: auto;
+}
 }
